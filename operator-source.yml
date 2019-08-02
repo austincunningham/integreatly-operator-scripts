@@ -1,0 +1,14 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorSource
+metadata:
+  finalizers:
+    - finalizer.operatorsources.operators.coreos.com
+  name: integreatly-operators
+  namespace: openshift-marketplace
+spec:
+  authorizationToken: {}
+  displayName: Integreatly Operators austincunningham
+  endpoint: 'https://quay.io/cnr'
+  publisher: austincunningham Publisher
+  registryNamespace: austincunningham
+  type: appregistry
